@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --background-elements: hsl(0, 0%, 99%);
+  --text-color: hsl(200, 15%, 8%);
+  --background-color: hsl(0, 0%, 100%);
+  font-family: "nunito", sans-serif;
+  max-width: 1440px;
+  background-color: var(--background-color);
+}
+
+body.dark {
+  --text-color: hsl(0, 100%, 100%);
+  --background-color: hsl(207, 26%, 17%);
+  --background-elements: hsl(209, 23%, 22%);
+}
+
+.country-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 4rem;
+  
+}
+
+.title {
+  font-weight: 800;
+}
+
+.header-container {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-elements);
+  color: var(--text-color);
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  
+  
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 8rem;
+  color: var(--text-color);
+  
+}
+
+img {
+  width: 40%;
+  margin-top: 5rem;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.button {
+  padding: 8px 24px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+  text-decoration-line: none;
+  color: inherit;
+  background-color: var(--background-elements);
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.details-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  max-height: 180px;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+}
+
+.details-text p {
+  margin: 0;
+  font-weight: 300;
+}
+.details-text p span{
+    font-weight: 300;
+}
+
+.border-countries {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  font-weight: 600;
+  
+}
+
+.border-countries a {
+  padding: 0.25rem 1rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  margin-inline: 0.25rem;
+  font-size: 1rem;
+  text-decoration-line: none;
+  color: inherit;
+  background-color: var(--background-elements);
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .details-text p {
+    font-size: 0.8rem;
+  }
+  .details-text-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-text {
+    display: block;
+    max-height: unset;
+  }
+  .details-text p {
+    margin: 1rem 0;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .header-container p {
+    font-size: 0.8rem;
+  }
+}
