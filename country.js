@@ -12,6 +12,12 @@ const tld = document.querySelector(".tld");
 const currencies = document.querySelector(".currencies");
 const languages = document.querySelector(".languages");
 const borderCountryTags = document.querySelector(".border-countries");
+const darkMode = document.querySelector('.dark-mode')
+const body = document.querySelector('body')
+
+darkMode.addEventListener('click', ()=> {
+  body.classList.toggle('dark')
+})
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
   .then((res) => res.json())
