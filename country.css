@@ -24,8 +24,10 @@ body.dark {
   
 }
 
-.title {
+.title a{
   font-weight: 800;
+  text-decoration-line: none;
+  color: var(--text-color);
 }
 
 .header-container {
