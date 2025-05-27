@@ -37,7 +37,7 @@ function renderCountriesList(data) {
     const countryCard = document.createElement("a");
     countryCard.classList.add("country-card");
 
-    countryCard.href = `http://127.0.0.1:3000/Front-end-mentor-projects/rest-countries-api-with-color-theme-switcher-master/rest-countries-api-with-color-theme-switcher-master/country.html?name=${encodeURIComponent(
+    countryCard.href = `./country.html?name=${encodeURIComponent(
       countries.name.common
     )}`;
 
