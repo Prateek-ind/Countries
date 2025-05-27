@@ -57,7 +57,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
           .then((borderCountry) => {
             const borderCountryTag = document.createElement("a");
             borderCountryTag.innerText = borderCountry[0].name.common;
-            borderCountryTag.href = `http://127.0.0.1:3000/Front-end-mentor-projects/rest-countries-api-with-color-theme-switcher-master/rest-countries-api-with-color-theme-switcher-master/country.html?name=${borderCountry[0].name.common}?fullText=true`;
+            borderCountryTag.href = `./country.html?name=${borderCountry[0].name.common}?fullText=true`;
             borderCountryTags.append(borderCountryTag);
             
           });
